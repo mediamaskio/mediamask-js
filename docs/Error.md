@@ -1,4 +1,4 @@
-# MediamaskApi.Error
+# Mediamask.Error
 
 ## Properties
 

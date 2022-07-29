@@ -28,9 +28,9 @@ import ImageApi from './api/ImageApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var MediamaskApi = require('index'); // See note below*.
-* var xxxSvc = new MediamaskApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new MediamaskApi.Yyy(); // Construct a model instance.
+* var Mediamask = require('index'); // See note below*.
+* var xxxSvc = new Mediamask.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new Mediamask.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -42,8 +42,8 @@ import ImageApi from './api/ImageApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new MediamaskApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new MediamaskApi.Yyy(); // Construct a model instance.
+* var xxxSvc = new Mediamask.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new Mediamask.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

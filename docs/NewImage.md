@@ -1,4 +1,4 @@
-# MediamaskApi.NewImage
+# Mediamask.NewImage
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# MediamaskApi.ValidationError
+# Mediamask.ValidationError
 
 ## Properties
 

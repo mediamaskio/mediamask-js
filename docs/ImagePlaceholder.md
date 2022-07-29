@@ -1,4 +1,4 @@
-# MediamaskApi.ImagePlaceholder
+# Mediamask.ImagePlaceholder
 
 ## Properties
 

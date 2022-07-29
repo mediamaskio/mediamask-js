@@ -1,4 +1,4 @@
-# MediamaskApi.TextPlaceholder
+# Mediamask.TextPlaceholder
 
 ## Properties
 

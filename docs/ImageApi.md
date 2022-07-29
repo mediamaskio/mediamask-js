@@ -1,4 +1,4 @@
-# MediamaskApi.ImageApi
+# Mediamask.ImageApi
 
 All URIs are relative to *https://mediamask.io/api/v1*
 
@@ -17,13 +17,13 @@ Render a new image
 ### Example
 
 ```javascript
-import MediamaskApi from 'mediamask_api';
-let defaultClient = MediamaskApi.ApiClient.instance;
+import Mediamask from 'mediamask';
+let defaultClient = Mediamask.ApiClient.instance;
 // Configure Bearer access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new MediamaskApi.ImageApi();
+let apiInstance = new Mediamask.ImageApi();
 let newImage = {"template":"3fa85f64-5717-4562-b3fc-2c963f66afa6","placeholders":[{"name":"text placeholder name","text":"an example text"},{"name":"image placeholder name","image":"https://example.com/example.jpg"}]}; // NewImage | Provide the template and placeholders values that should be rendered in the image
 apiInstance.renderImage(newImage, (error, data, response) => {
   if (error) {
