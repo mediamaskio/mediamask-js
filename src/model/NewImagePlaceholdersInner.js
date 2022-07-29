@@ -18,7 +18,7 @@ import TextPlaceholder from './TextPlaceholder';
 /**
  * The NewImagePlaceholdersInner model module.
  * @module model/NewImagePlaceholdersInner
- * @version 1.0.0
+ * @version 0.0.1
  */
 class NewImagePlaceholdersInner {
     /**

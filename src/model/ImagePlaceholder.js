@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ImagePlaceholder model module.
  * @module model/ImagePlaceholder
- * @version 1.0.0
+ * @version 0.0.1
  */
 class ImagePlaceholder {
     /**

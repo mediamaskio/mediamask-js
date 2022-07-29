@@ -20,7 +20,7 @@ import ValidationError from '../model/ValidationError';
 /**
 * Image service.
 * @module api/ImageApi
-* @version 1.0.0
+* @version 0.0.1
 */
 export default class ImageApi {
 

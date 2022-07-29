@@ -17,7 +17,7 @@ import NewImagePlaceholdersInner from './NewImagePlaceholdersInner';
 /**
  * The NewImage model module.
  * @module model/NewImage
- * @version 1.0.0
+ * @version 0.0.1
  */
 class NewImage {
     /**
