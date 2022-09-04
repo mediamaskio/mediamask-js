@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TextPlaceholder model module.
  * @module model/TextPlaceholder
- * @version 1.0.5
+ * @version 1.0.6
  */
 class TextPlaceholder {
     /**

@@ -17,7 +17,7 @@ import DynamicLayer from './DynamicLayer';
 /**
  * The Template model module.
  * @module model/Template
- * @version 1.0.5
+ * @version 1.0.6
  */
 class Template {
     /**

@@ -18,7 +18,7 @@ import TextPlaceholder from './TextPlaceholder';
 /**
  * The NewImageDynamicLayersInner model module.
  * @module model/NewImageDynamicLayersInner
- * @version 1.0.5
+ * @version 1.0.6
  */
 class NewImageDynamicLayersInner {
     /**
