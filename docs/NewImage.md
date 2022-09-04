@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **template** | **String** |  | 
-**placeholders** | [**[NewImagePlaceholdersInner]**](NewImagePlaceholdersInner.md) |  | [optional] 
+**dynamicLayers** | [**[NewImageDynamicLayersInner]**](NewImageDynamicLayersInner.md) |  | [optional] 
 
 

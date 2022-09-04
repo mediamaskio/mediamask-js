@@ -12,21 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
+import Template from './Template';
 
 /**
- * The Error model module.
- * @module model/Error
+ * The Templates200Response model module.
+ * @module model/Templates200Response
  * @version 1.0.5
  */
-class Error {
+class Templates200Response {
     /**
-     * Constructs a new <code>Error</code>.
-     * @alias module:model/Error
-     * @param message {String} 
+     * Constructs a new <code>Templates200Response</code>.
+     * @alias module:model/Templates200Response
      */
-    constructor(message) { 
+    constructor() { 
         
-        Error.initialize(this, message);
+        Templates200Response.initialize(this);
     }
 
     /**
@@ -34,23 +34,22 @@ class Error {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, message) { 
-        obj['message'] = message;
+    static initialize(obj) { 
     }
 
     /**
-     * Constructs a <code>Error</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>Templates200Response</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/Error} obj Optional instance to populate.
-     * @return {module:model/Error} The populated <code>Error</code> instance.
+     * @param {module:model/Templates200Response} obj Optional instance to populate.
+     * @return {module:model/Templates200Response} The populated <code>Templates200Response</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new Error();
+            obj = obj || new Templates200Response();
 
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = ApiClient.convertToType(data['data'], [Template]);
             }
         }
         return obj;
@@ -60,14 +59,14 @@ class Error {
 }
 
 /**
- * @member {String} message
+ * @member {Array.<module:model/Template>} data
  */
-Error.prototype['message'] = undefined;
+Templates200Response.prototype['data'] = undefined;
 
 
 
 
 
 
-export default Error;
+export default Templates200Response;
 

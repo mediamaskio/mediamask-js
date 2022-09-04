@@ -1,6 +1,6 @@
 {
   "name": "mediamask-js",
-  "version": "0.0.1",
+  "version": "1.0.5",
   "description": "Mediamask POST API Client for generating images via Javascript",
   "license": "MIT",
   "main": "dist/index.js",

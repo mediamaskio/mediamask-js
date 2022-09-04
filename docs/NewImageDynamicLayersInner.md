@@ -1,4 +1,4 @@
-# Mediamask.NewImagePlaceholdersInner
+# Mediamask.NewImageDynamicLayersInner
 
 ## Properties
 

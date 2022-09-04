@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Mediamask.TextPlaceholder();
+    instance = new Mediamask.MediamaskApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,25 +47,37 @@
       object[property] = value;
   }
 
-  describe('TextPlaceholder', function() {
-    it('should create an instance of TextPlaceholder', function() {
-      // uncomment below and update the code to test TextPlaceholder
-      //var instance = new Mediamask.TextPlaceholder();
-      //expect(instance).to.be.a(Mediamask.TextPlaceholder);
+  describe('MediamaskApi', function() {
+    describe('html', function() {
+      it('should call html successfully', function(done) {
+        //uncomment below and update the code to test html
+        //instance.html(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new Mediamask.TextPlaceholder();
-      //expect(instance).to.be();
+    describe('renderImage', function() {
+      it('should call renderImage successfully', function(done) {
+        //uncomment below and update the code to test renderImage
+        //instance.renderImage(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property text (base name: "text")', function() {
-      // uncomment below and update the code to test the property text
-      //var instance = new Mediamask.TextPlaceholder();
-      //expect(instance).to.be();
+    describe('templates', function() {
+      it('should call templates successfully', function(done) {
+        //uncomment below and update the code to test templates
+        //instance.templates(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
   });
 
 }));

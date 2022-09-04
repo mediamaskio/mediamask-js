@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Mediamask.TextPlaceholder();
+    instance = new Mediamask.DynamicLayer();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,34 @@
       object[property] = value;
   }
 
-  describe('TextPlaceholder', function() {
-    it('should create an instance of TextPlaceholder', function() {
-      // uncomment below and update the code to test TextPlaceholder
-      //var instance = new Mediamask.TextPlaceholder();
-      //expect(instance).to.be.a(Mediamask.TextPlaceholder);
+  describe('DynamicLayer', function() {
+    it('should create an instance of DynamicLayer', function() {
+      // uncomment below and update the code to test DynamicLayer
+      //var instance = new Mediamask.DynamicLayer();
+      //expect(instance).to.be.a(Mediamask.DynamicLayer);
+    });
+
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instance = new Mediamask.DynamicLayer();
+      //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new Mediamask.TextPlaceholder();
+      //var instance = new Mediamask.DynamicLayer();
       //expect(instance).to.be();
     });
 
-    it('should have the property text (base name: "text")', function() {
-      // uncomment below and update the code to test the property text
-      //var instance = new Mediamask.TextPlaceholder();
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instance = new Mediamask.DynamicLayer();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property index (base name: "index")', function() {
+      // uncomment below and update the code to test the property index
+      //var instance = new Mediamask.DynamicLayer();
       //expect(instance).to.be();
     });
 
