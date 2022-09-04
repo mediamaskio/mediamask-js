@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient.js';
 /**
  * The TextPlaceholder model module.
  * @module model/TextPlaceholder
- * @version 1.0.6
+ * @version 1.0.8
  */
 class TextPlaceholder {
     /**

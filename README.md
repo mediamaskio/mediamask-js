@@ -3,7 +3,7 @@
 Mediamask - JavaScript client for the mediamask POST API
 
 - API version: 1.0.5
-- Package version: 1.0.6
+- Package version: 1.0.8
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 
 ## Installation

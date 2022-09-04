@@ -21,7 +21,7 @@ import ValidationError from '../model/ValidationError.js';
 /**
 * Mediamask service.
 * @module api/MediamaskApi
-* @version 1.0.6
+* @version 1.0.8
 */
 export default class MediamaskApi {
 

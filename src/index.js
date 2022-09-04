@@ -54,7 +54,7 @@ import MediamaskApi from './api/MediamaskApi.js';
 * </pre>
 * </p>
 * @module index
-* @version 1.0.6
+* @version 1.0.8
 */
 export {
     /**

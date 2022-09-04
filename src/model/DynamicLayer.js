@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient.js';
 /**
  * The DynamicLayer model module.
  * @module model/DynamicLayer
- * @version 1.0.6
+ * @version 1.0.8
  */
 class DynamicLayer {
     /**
