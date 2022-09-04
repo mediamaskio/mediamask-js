@@ -12,17 +12,17 @@
  */
 
 
-import ApiClient from './ApiClient';
-import DynamicLayer from './model/DynamicLayer';
-import Error from './model/Error';
-import ImagePlaceholder from './model/ImagePlaceholder';
-import NewImage from './model/NewImage';
-import NewImageDynamicLayersInner from './model/NewImageDynamicLayersInner';
-import Template from './model/Template';
-import Templates200Response from './model/Templates200Response';
-import TextPlaceholder from './model/TextPlaceholder';
-import ValidationError from './model/ValidationError';
-import MediamaskApi from './api/MediamaskApi';
+import ApiClient from './ApiClient.js';
+import DynamicLayer from './model/DynamicLayer.js';
+import Error from './model/Error.js';
+import ImagePlaceholder from './model/ImagePlaceholder.js';
+import NewImage from './model/NewImage.js';
+import NewImageDynamicLayersInner from './model/NewImageDynamicLayersInner.js';
+import Template from './model/Template.js';
+import Templates200Response from './model/Templates200Response.js';
+import TextPlaceholder from './model/TextPlaceholder.js';
+import ValidationError from './model/ValidationError.js';
+import MediamaskApi from './api/MediamaskApi.js';
 
 
 /**

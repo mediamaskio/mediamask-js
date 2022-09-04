@@ -11,9 +11,9 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import ImagePlaceholder from './ImagePlaceholder';
-import TextPlaceholder from './TextPlaceholder';
+import ApiClient from '../ApiClient.js';
+import ImagePlaceholder from './ImagePlaceholder.js';
+import TextPlaceholder from './TextPlaceholder.js';
 
 /**
  * The NewImageDynamicLayersInner model module.

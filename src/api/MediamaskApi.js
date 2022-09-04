@@ -12,11 +12,11 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import Error from '../model/Error';
-import NewImage from '../model/NewImage';
-import Templates200Response from '../model/Templates200Response';
-import ValidationError from '../model/ValidationError';
+import ApiClient from "../ApiClient.js";
+import Error from '../model/Error.js';
+import NewImage from '../model/NewImage.js';
+import Templates200Response from '../model/Templates200Response.js';
+import ValidationError from '../model/ValidationError.js';
 
 /**
 * Mediamask service.

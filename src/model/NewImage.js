@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import NewImageDynamicLayersInner from './NewImageDynamicLayersInner';
+import ApiClient from '../ApiClient.js';
+import NewImageDynamicLayersInner from './NewImageDynamicLayersInner.js';
 
 /**
  * The NewImage model module.

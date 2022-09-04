@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import Template from './Template';
+import ApiClient from '../ApiClient.js';
+import Template from './Template.js';
 
 /**
  * The Templates200Response model module.

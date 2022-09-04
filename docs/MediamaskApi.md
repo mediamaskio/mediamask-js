@@ -19,7 +19,7 @@ Render HTML for a template with dynamic layer values
 ### Example
 
 ```javascript
-import Mediamask from 'mediamask';
+import Mediamask from 'mediamask-js';
 let defaultClient = Mediamask.ApiClient.instance;
 // Configure Bearer access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -66,7 +66,7 @@ Render a new image
 ### Example
 
 ```javascript
-import Mediamask from 'mediamask';
+import Mediamask from 'mediamask-js';
 let defaultClient = Mediamask.ApiClient.instance;
 // Configure Bearer access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
@@ -113,7 +113,7 @@ Get all tempaltes
 ### Example
 
 ```javascript
-import Mediamask from 'mediamask';
+import Mediamask from 'mediamask-js';
 let defaultClient = Mediamask.ApiClient.instance;
 // Configure Bearer access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];

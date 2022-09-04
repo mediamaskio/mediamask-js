@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import DynamicLayer from './DynamicLayer';
+import ApiClient from '../ApiClient.js';
+import DynamicLayer from './DynamicLayer.js';
 
 /**
  * The Template model module.

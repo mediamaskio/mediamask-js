@@ -1,4 +1,4 @@
-# mediamask
+# mediamask-js
 
 Mediamask - JavaScript client for the mediamask POST API
 
@@ -40,7 +40,7 @@ Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the follow
 npm link
 ```
 
-To use the link you just defined in your project, switch to the directory you want to use your mediamask from, and run:
+To use the link you just defined in your project, switch to the directory you want to use your mediamask-js from, and run:
 
 ```shell
 npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
@@ -87,7 +87,7 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-import Mediamask from 'mediamask';
+import Mediamask from 'mediamask-js';
 
 var defaultClient = Mediamask.ApiClient.instance;
 // Configure Bearer access token for authorization: bearerAuth
