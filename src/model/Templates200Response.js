@@ -17,7 +17,7 @@ import Template from './Template.js';
 /**
  * The Templates200Response model module.
  * @module model/Templates200Response
- * @version 1.0.9
+ * @version 1.0.10
  */
 class Templates200Response {
     /**

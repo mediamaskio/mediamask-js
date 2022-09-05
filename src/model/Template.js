@@ -17,7 +17,7 @@ import DynamicLayer from './DynamicLayer.js';
 /**
  * The Template model module.
  * @module model/Template
- * @version 1.0.9
+ * @version 1.0.10
  */
 class Template {
     /**

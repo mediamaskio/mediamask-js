@@ -17,7 +17,7 @@ import NewImageDynamicLayersInner from './NewImageDynamicLayersInner.js';
 /**
  * The NewImage model module.
  * @module model/NewImage
- * @version 1.0.9
+ * @version 1.0.10
  */
 class NewImage {
     /**

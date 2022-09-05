@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient.js';
 /**
  * The ValidationError model module.
  * @module model/ValidationError
- * @version 1.0.9
+ * @version 1.0.10
  */
 class ValidationError {
     /**
