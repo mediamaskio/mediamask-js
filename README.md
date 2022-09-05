@@ -96,14 +96,12 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 var api = new Mediamask.MediamaskApi()
 var newImage = {"template":"3fa85f64-5717-4562-b3fc-2c963f66afa6","dynamic_layers":[{"name":"text placeholder name","text":"an example text"},{"name":"image placeholder name","image":"https://example.com/example.jpg"}]}; // {NewImage} Provide the template and placeholders values that should be rendered in the image
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-api.html(newImage, callback);
+api.html(newImage).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
 
 ```
 

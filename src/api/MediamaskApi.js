@@ -37,21 +37,13 @@ export default class MediamaskApi {
     }
 
 
-    /**
-     * Callback function to receive the result of the html operation.
-     * @callback module:api/MediamaskApi~htmlCallback
-     * @param {String} error Error message, if any.
-     * @param {String} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
 
     /**
      * Render HTML for a template with dynamic layer values
      * @param {module:model/NewImage} newImage Provide the template and placeholders values that should be rendered in the image
-     * @param {module:api/MediamaskApi~htmlCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link String}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link String} and HTTP response
      */
-    html(newImage, callback) {
+    htmlWithHttpInfo(newImage) {
       let postBody = newImage;
       // verify the required parameter 'newImage' is set
       if (newImage === undefined || newImage === null) {
@@ -74,25 +66,29 @@ export default class MediamaskApi {
       return this.apiClient.callApi(
         '/html', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
+        authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * Callback function to receive the result of the renderImage operation.
-     * @callback module:api/MediamaskApi~renderImageCallback
-     * @param {String} error Error message, if any.
-     * @param {File} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
+     * Render HTML for a template with dynamic layer values
+     * @param {module:model/NewImage} newImage Provide the template and placeholders values that should be rendered in the image
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link String}
      */
+    html(newImage) {
+      return this.htmlWithHttpInfo(newImage)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
 
     /**
      * Render a new image
      * @param {module:model/NewImage} newImage Provide the template and placeholders values that should be rendered in the image
-     * @param {module:api/MediamaskApi~renderImageCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link File}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link File} and HTTP response
      */
-    renderImage(newImage, callback) {
+    renderImageWithHttpInfo(newImage) {
       let postBody = newImage;
       // verify the required parameter 'newImage' is set
       if (newImage === undefined || newImage === null) {
@@ -115,24 +111,28 @@ export default class MediamaskApi {
       return this.apiClient.callApi(
         '/image', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
+        authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * Callback function to receive the result of the templates operation.
-     * @callback module:api/MediamaskApi~templatesCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/Templates200Response} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
+     * Render a new image
+     * @param {module:model/NewImage} newImage Provide the template and placeholders values that should be rendered in the image
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link File}
      */
+    renderImage(newImage) {
+      return this.renderImageWithHttpInfo(newImage)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
 
     /**
      * Get all tempaltes
-     * @param {module:api/MediamaskApi~templatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Templates200Response}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Templates200Response} and HTTP response
      */
-    templates(callback) {
+    templatesWithHttpInfo() {
       let postBody = null;
 
       let pathParams = {
@@ -151,8 +151,19 @@ export default class MediamaskApi {
       return this.apiClient.callApi(
         '/templates', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
+        authNames, contentTypes, accepts, returnType, null
       );
+    }
+
+    /**
+     * Get all tempaltes
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Templates200Response}
+     */
+    templates() {
+      return this.templatesWithHttpInfo()
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
     }
 
 
