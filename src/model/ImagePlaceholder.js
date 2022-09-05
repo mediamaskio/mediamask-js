@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient.js';
 /**
  * The ImagePlaceholder model module.
  * @module model/ImagePlaceholder
- * @version 1.0.8
+ * @version 1.0.9
  */
 class ImagePlaceholder {
     /**
