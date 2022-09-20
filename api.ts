@@ -13,6 +13,7 @@
  */
 
 
+import crypto from 'crypto'
 import { Configuration } from './configuration';
 import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 // Some imports not used depending on template conditions
@@ -426,6 +427,10 @@ export const MediamaskApiFactory = function (configuration?: Configuration, base
     };
 };
 
+interface SignedUrlParameters {
+    [name: string]: string
+}
+
 /**
  * MediamaskApi - object-oriented interface
  * @export
@@ -467,6 +472,28 @@ export class MediamaskApi extends BaseAPI {
     public templates(options?: AxiosRequestConfig) {
         return MediamaskApiFp(this.configuration).templates(options).then((request) => request(this.axios, this.basePath));
     }
+
+
+    public createSignedUrl(templateUid: string, parameters: SignedUrlParameters){
+        const baseUrl = 'https://mediamask.io/image/';
+
+        // Generate URL API Request URL
+        const requestUrl = new URL(baseUrl + templateUid);
+        for(const parameter in parameters){
+            requestUrl.searchParams.set( parameter, parameters[parameter]);
+        }
+
+        // Generate Signed URL
+        const signature = crypto
+            .createHash('sha256')
+            .update(requestUrl.toString() + this.configuration.apiKey)
+            .digest('hex');
+        requestUrl.searchParams.set( 'signature', signature);
+
+        return requestUrl.toString();
+    }
 }
+
+
 
 

@@ -25,10 +25,6 @@ npm install
 npm run build
 ```
 
-### Publishing
-
-First build the package then run ```npm publish```
-
 ### Consuming
 
 navigate to the folder of your consuming project and run one of the following commands.
@@ -39,7 +35,16 @@ _published:_
 npm install mediamask-js@1.1.0 --save
 ```
 
-_unPublished (not recommended):_
+### Usage
 
+```js
+import Mediamask from 'mediamask-js';
+
+const api = new Mediamask.MediamaskApi({
+  accessToken: 'API_TOKEN',
+});
+
+api.templates().then((response) => {
+  console.log(response.data);
+});
 ```
-npm install PATH_TO_GENERATED_PACKAGE --save
