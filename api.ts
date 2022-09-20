@@ -13,7 +13,6 @@
  */
 
 
-import crypto from 'crypto'
 import { Configuration } from './configuration';
 import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 // Some imports not used depending on template conditions
@@ -475,6 +474,7 @@ export class MediamaskApi extends BaseAPI {
 
 
     public createSignedUrl(templateUid: string, parameters: SignedUrlParameters){
+        const crypto = require('crypto');
         const baseUrl = 'https://mediamask.io/image/';
 
         // Generate URL API Request URL
