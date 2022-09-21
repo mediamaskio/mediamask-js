@@ -486,7 +486,7 @@ export class MediamaskApi extends BaseAPI {
         // Generate Signed URL
         const signature = crypto
             .createHash('sha256')
-            .update(requestUrl.toString() + this.configuration.apiKey)
+            .update(requestUrl.toString() + this.configuration.accessToken)
             .digest('hex');
         requestUrl.searchParams.set( 'signature', signature);
 
