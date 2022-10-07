@@ -38,11 +38,13 @@ npm install mediamask-js@1.1.3 --save
 ### Usage
 
 ```js
-import Mediamask from 'mediamask-js';
+import { MediamaskApi, Configuration } from 'mediamask-js';
 
-const api = new Mediamask.MediamaskApi({
-  accessToken: 'API_TOKEN',
-});
+const api = new MediamaskApi(
+  new Configuration({
+    accessToken: 'API_TOKEN',
+  })
+);
 
 api.templates().then((response) => {
   console.log(response.data);
