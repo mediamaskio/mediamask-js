@@ -473,12 +473,13 @@ export class MediamaskApi extends BaseAPI {
     }
 
 
+
     public createSignedUrl(templateUid: string, parameters: SignedUrlParameters){
         const crypto = require('crypto');
         const baseUrl = 'https://mediamask.io/image/';
 
         // Generate URL API Request URL
-        const requestUrl = new URL(baseUrl + templateUid);
+        const requestUrl = new URL(this.encodeRFC3986URIComponent(baseUrl + templateUid));
         for(const parameter in parameters){
             requestUrl.searchParams.set( parameter, parameters[parameter]);
         }
@@ -486,11 +487,19 @@ export class MediamaskApi extends BaseAPI {
         // Generate Signed URL
         const signature = crypto
             .createHash('sha256')
-            .update(requestUrl.toString() + this.configuration.accessToken)
+            .update(this.encodeRFC3986URIComponent(requestUrl.toString() + this.configuration.accessToken))
             .digest('hex');
         requestUrl.searchParams.set( 'signature', signature);
 
-        return requestUrl.toString();
+        return this.encodeRFC3986URIComponent(requestUrl.toString());
+    }
+
+    public encodeRFC3986URIComponent(str: string) {
+        return encodeURIComponent(str)
+            .replace(
+                /[!'()*]/g,
+                (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`
+            );
     }
 }
 

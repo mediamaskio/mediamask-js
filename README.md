@@ -1,4 +1,4 @@
-## mediamask-js@1.1.6
+## mediamask-js@1.1.7
 
 It can be used in both TypeScript and JavaScript. In TypeScript, the definition should be automatically resolved via `package.json`. ([Reference](http://www.typescriptlang.org/docs/handbook/typings-for-npm-packages.html))
 
