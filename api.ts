@@ -480,9 +480,14 @@ export class MediamaskApi extends BaseAPI {
 
         // Generate URL API Request URL
         const requestUrl = new URL(baseUrl + templateUid);
+        const requestUrl = new URL(baseUrl + templateUid);
+        const urlParameters = [];
+
         for(const parameter in parameters){
-            requestUrl.searchParams.set( this.encodeRFC3986URIComponent(parameter), this.encodeRFC3986URIComponent(parameters[parameter]));
+            urlParameters.push(this.encodeRFC3986URIComponent(parameter) + '=' + this.encodeRFC3986URIComponent(parameters[parameter]));
         }
+
+        requestUrl.search = urlParameters.join('&');
 
         // Generate Signed URL
         const signature = crypto

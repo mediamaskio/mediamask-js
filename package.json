@@ -1,6 +1,6 @@
 {
   "name": "mediamask-js",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "OpenAPI client for mediamask-js",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
