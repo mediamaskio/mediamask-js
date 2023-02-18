@@ -480,7 +480,6 @@ export class MediamaskApi extends BaseAPI {
 
         // Generate URL API Request URL
         const requestUrl = new URL(baseUrl + templateUid);
-        const requestUrl = new URL(baseUrl + templateUid);
         const urlParameters = [];
 
         for(const parameter in parameters){
